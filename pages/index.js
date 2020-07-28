@@ -13,7 +13,16 @@ export async function getStaticProps() {
 }
 
 export default ({ blockMap }) => (
-  <div style={{ maxWidth: 768 }}>
+  <div>
     <NotionRenderer blockMap={blockMap} />
+    <style jsx global>{`
+        div :global(.notion-code) {
+          box-sizing: border-box;
+        }
+        body {
+          padding: 0;
+          margin: 0;
+        }
+      `}</style>
   </div>
 );
