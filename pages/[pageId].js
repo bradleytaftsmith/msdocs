@@ -12,7 +12,7 @@ export async function getStaticPaths() {
     return `/${id}`
   })
 
-  return { paths, fallback: false}
+  return { paths, fallback: true}
 
 }
 
