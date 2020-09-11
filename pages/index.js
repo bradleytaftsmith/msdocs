@@ -2,7 +2,7 @@ import { NotionRenderer } from "react-notion";
 
 export async function getStaticProps() {
   const data = await fetch(
-    "https://notion-api.splitbee.io/v1/page/b2a847477c554189b48ad2ab26d37fb7"
+    "https://notion-api.splitbee.io/v1/page/1965398e49214359a656e2824dcfd9a3"
   ).then(res => res.json());
 
   return {
